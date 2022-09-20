@@ -7,8 +7,11 @@ class HelloWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Hello Widget'),
-      ),
+          title: Text('Hello Widget'),
+          leading: IconButton(
+            icon: Icon(Icons.menu),
+            onPressed: () {},
+          )),
       body: Container(
         color: Colors.white,
         constraints: BoxConstraints.expand(),
