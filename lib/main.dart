@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:helloworld/helloWorld.dart';
+import 'package:helloworld/shoppingCart/ui/index.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,9 +14,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Sekolah Beta Eric',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        // primarySwatch: Colors.blue,
+        primarySwatch: Colors.teal,
       ),
-      home: HelloWidget(),
+      home: ShoppingCartPage(),
     );
   }
 }
