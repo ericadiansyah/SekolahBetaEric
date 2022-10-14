@@ -24,35 +24,37 @@ class ShoppingCartPage extends StatelessWidget {
           id: '12', name: 'Item 12', price: 10000, image: 'assets/shoe3.png'),
     ];
 
-    final List<int> prices = [
-      18000,
-      25000,
-      100000,
-      42000,
-      77000,
-      78000,
-      11000,
-      60000,
-      149000,
-      200000
-    ];
-    final List<String> pictures = [
-      'assets/shoe1.png',
-      'assets/shoe2.png',
-      'assets/shoe3.png',
-      'assets/shoe1.png',
-      'assets/shoe2.png',
-      'assets/shoe3.png',
-      'assets/shoe1.png',
-      'assets/shoe2.png',
-      'assets/shoe3.png',
-      'assets/shoe1.png',
-      'assets/shoe2.png'
-    ];
+    // final List<int> prices = [
+    //   18000,
+    //   25000,
+    //   100000,
+    //   42000,
+    //   77000,
+    //   78000,
+    //   11000,
+    //   60000,
+    //   149000,
+    //   200000
+    // ];
+    // final List<String> pictures = [
+    //   'assets/shoe1.png',
+    //   'assets/shoe2.png',
+    //   'assets/shoe3.png',
+    //   'assets/shoe1.png',
+    //   'assets/shoe2.png',
+    //   'assets/shoe3.png',
+    //   'assets/shoe1.png',
+    //   'assets/shoe2.png',
+    //   'assets/shoe3.png',
+    //   'assets/shoe1.png',
+    //   'assets/shoe2.png'
+    // ];
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pop(context);
+          },
           icon: const Icon(Icons.arrow_back),
           tooltip: 'Back',
         ),
